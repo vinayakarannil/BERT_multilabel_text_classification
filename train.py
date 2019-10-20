@@ -25,10 +25,10 @@ x_train, x_test, y_train, y_test = dataset.getDataset(test_size=0.2, random_stat
 
 ######## get bert encoding for train and validation datasets################
 bc = Bert(args.ip)
-x_train = bc.getBertEncoding(x_train[:100])
-x_test = bc.getBertEncoding(x_test[:100])
-y_train = np.array(y_train[:100])
-y_test = np.array(y_test[:100])
+x_train = bc.getBertEncoding(x_train)
+x_test = bc.getBertEncoding(x_test)
+y_train = np.array(y_train)
+y_test = np.array(y_test)
 ############################################################################
 
 
